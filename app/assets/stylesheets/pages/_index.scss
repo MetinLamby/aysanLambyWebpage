@@ -11,34 +11,42 @@
 @font-face {
     //font-family: 'ABCDiatypeMono';
     //src: url('assets/fonts/ABCDiatypeMono-Light.ttf');
-    font-family: 'ABCDiatypeMono';
-    src: font_url('ABCDiatypeMono-Light');
+    //font-family: 'ABCDiatypeMono';
+    //src: font_url('ABCDiatypeMono-Light');
+    font-family: 'cour';
+    src: font_url('cour');
 }
 
 p {
     margin-bottom: 0px;
-    font-family: "ABCDiatypeMono", sans-serif;
+    //font-family: "ABCDiatypeMono", sans-serif;
+    font-family: "cour", sans-serif;
 }
 
 a {
-    font-family: "ABCDiatypeMono", sans-serif;
+    //font-family: "ABCDiatypeMono", sans-serif;
+    font-family: "cour", sans-serif;
     color: black;
 }
 
 li {
-    font-family: "ABCDiatypeMono", sans-serif;
+    //font-family: "ABCDiatypeMono", sans-serif;
+    font-family: "cour", sans-serif;
 }
 
 h1 h2 {
-    font-family: "ABCDiatypeMono", sans-serif;
+    //font-family: "ABCDiatypeMono", sans-serif;
+    font-family: "cour", sans-serif;
 }
 
 h3 h4 {
-    font-family: "ABCDiatypeMono", sans-serif;
+    //font-family: "ABCDiatypeMono", sans-serif;
+    font-family: "cour", sans-serif;
 }
 
 h5 {
-    font-family: "ABCDiatypeMono", sans-serif;
+    //font-family: "ABCDiatypeMono", sans-serif;
+    font-family: "cour", sans-serif;
 }
 
 

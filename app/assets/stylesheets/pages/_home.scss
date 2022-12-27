@@ -13,6 +13,11 @@
     justify-content: center;
     .image {
         height: 100%;
+        display: none;
+    }
+    .firstimage {
+        height: 100%;
+        display: block;
     }
 }
 
