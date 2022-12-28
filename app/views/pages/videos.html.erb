@@ -1,1 +1,13 @@
 <a href="<%= root_path %>" class="back-btn">home</a>
+<div class="photos-videos-div">
+    <div class="text-div">
+        <ul>
+            <li><a href="<%= videos_zahnfleisch_path %>">01 Apsilon x Xaver - Zahnfleisch</a></li>
+            <li><a href="<%= videos_druck_path %>">02 Apsilon - Druck</a></li>
+            <li><a href="<%= videos_koefte_path %>">03 Apsilon - Köfte</a></li>
+        </ul>
+    </div>
+    <div class="image-div">
+        <%= cl_image_tag("a11", {class: "image"})%>
+    </div>
+</div>
