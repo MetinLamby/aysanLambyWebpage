@@ -1,7 +1,17 @@
 // Specific CSS for your home-page
-#home-div {
-    height: 100vh;
-    width: 100vw;
+//phone 
+@media(max-width: 768px) {
+    #home-div {
+        height: 85vh;
+        width: 100vw;
+    }
+}
+
+@media(min-width: 993px) {
+    #home-div {
+        height: 100vh;
+        width: 100vw;
+    }
 }
 
 #images-div {
