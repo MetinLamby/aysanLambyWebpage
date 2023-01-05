@@ -1,10 +1,10 @@
-<div id="home-div">
-    <div id="banner-div">
-        <%= image_tag "Asset_2.png", height: "50%" %>
+<div class="home-div">
+    <div class="banner-div">
+        <%= image_tag "Asset_2.png", :class => "banner-img"%>
     </div>
-    <div id="buttons-div">
-        <div id="photos-div" class="div-one-part"><a href="<%= photos_path %>">photos</a></div>
-        <div id="images-div" class="slideshow">
+    <div class="buttons-div">
+        <div class="photos-div div-one-part"><a href="<%= photos_path %>">photos</a></div>
+        <div class="images-div slideshow">
             <%= cl_image_tag("sl1", {class: "firstimage"})%>
             <%= cl_image_tag("sl2", {class: "image"})%>
             <%= cl_image_tag("sl3", {class: "image"})%>
@@ -22,7 +22,7 @@
             <%= cl_image_tag("sl15", {class: "image"})%>
             <%= cl_image_tag("sl16", {class: "image"})%>
         </div>
-        <div id="videos-div" class="div-one-part"><a href="<%= videos_path %>">videos</a></div>
+        <div class="videos-div div-one-part"><a href="<%= videos_path %>">videos</a></div>
     </div>
 
 <script>
@@ -51,7 +51,7 @@
   }
 </script>
 
-<div id="footer-div">
+<div class="footer-div">
     <p><a href = "mailto: aysanlamby@outlook.com">contact</a> | <a href="https://www.instagram.com/aysanlamby/?hl=en">instagram</a></p>
 </div>
 
