@@ -4,7 +4,7 @@
     </div>
     <div class="buttons-div-large">
         <div class="photos-div div-one-part"><a href="<%= photos_path %>">photos</a></div>
-        <div class="images-div slideshow">
+        <div class="images-div slideshow-large">
             <%= cl_image_tag("sl1", {class: "firstimage"})%>
             <%= cl_image_tag("sl2", {class: "image"})%>
             <%= cl_image_tag("sl3", {class: "image"})%>
@@ -25,7 +25,7 @@
         <div class="videos-div div-one-part"><a href="<%= videos_path %>">videos</a></div>
     </div>
     <div class="buttons-div-small">
-        <div class="images-div slideshow">
+        <div class="images-div slideshow-small">
             <%= cl_image_tag("sl1", {class: "firstimage"})%>
             <%= cl_image_tag("sl2", {class: "image"})%>
             <%= cl_image_tag("sl3", {class: "image"})%>
@@ -52,7 +52,17 @@
 <script>
 
 // Get the slideshow container
-  var slideshow = document.querySelector('.slideshow');
+    var screenWidth = screen.width;
+    var slideshow = null;
+    if (screenWidth <= 768) {
+        slideshow = document.querySelector('.slideshow-small');
+    } else {
+        slideshow = document.querySelector('.slideshow-large');
+    }
+  //var slideshow = document.querySelector('.slideshow');
+  //var slideshow = document.getElementsByClassName("slideshow-one slideshow-two");
+  //var slideshow = document.querySelectorAll(".slideshow-one,.slideshow-two");
+
 
   // Get the images
   var images = slideshow.querySelectorAll('img');
@@ -61,7 +71,7 @@
   var index = 0;
 
   // Set the interval for the slideshow
-  var interval = setInterval(showNextImage, 6000);
+  var interval = setInterval(showNextImage, 5000);
 
   function showNextImage() {
       // Hide the current image
