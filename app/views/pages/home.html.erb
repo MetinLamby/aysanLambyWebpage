@@ -2,7 +2,7 @@
     <div class="banner-div">
         <%= image_tag "Asset_2.png", :class => "banner-img"%>
     </div>
-    <div class="buttons-div">
+    <div class="buttons-div-large">
         <div class="photos-div div-one-part"><a href="<%= photos_path %>">photos</a></div>
         <div class="images-div slideshow">
             <%= cl_image_tag("sl1", {class: "firstimage"})%>
@@ -24,6 +24,30 @@
         </div>
         <div class="videos-div div-one-part"><a href="<%= videos_path %>">videos</a></div>
     </div>
+    <div class="buttons-div-small">
+        <div class="images-div slideshow">
+            <%= cl_image_tag("sl1", {class: "firstimage"})%>
+            <%= cl_image_tag("sl2", {class: "image"})%>
+            <%= cl_image_tag("sl3", {class: "image"})%>
+            <%= cl_image_tag("sl4", {class: "image"})%>
+            <%= cl_image_tag("sl5", {class: "image"})%>
+            <%= cl_image_tag("sl6", {class: "image"})%>
+            <%= cl_image_tag("sl7", {class: "image"})%>
+            <%= cl_image_tag("sl8", {class: "image"})%>
+            <%= cl_image_tag("sl9", {class: "image"})%>
+            <%= cl_image_tag("sl10", {class: "image"})%>
+            <%= cl_image_tag("sl11", {class: "image"})%>
+            <%= cl_image_tag("sl12", {class: "image"})%>
+            <%= cl_image_tag("sl13", {class: "image"})%>
+            <%= cl_image_tag("sl14", {class: "image"})%>
+            <%= cl_image_tag("sl15", {class: "image"})%>
+            <%= cl_image_tag("sl16", {class: "image"})%>
+        </div>
+        <div class="home-links">
+            <div class="photos-div div-one-part"><a href="<%= photos_path %>">photos</a></div>
+            <div class="videos-div div-one-part"><a href="<%= videos_path %>">videos</a></div>
+        </div>
+    </div>
 
 <script>
 
@@ -37,7 +61,7 @@
   var index = 0;
 
   // Set the interval for the slideshow
-  var interval = setInterval(showNextImage, 3000);
+  var interval = setInterval(showNextImage, 6000);
 
   function showNextImage() {
       // Hide the current image
