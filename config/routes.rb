@@ -7,9 +7,8 @@ Rails.application.routes.draw do
   get "photos/brandon", to: "pages#brandon"
   get "photos/nyc", to: "pages#nyc"
   get "photos/salomon", to: "pages#salomon"
-  get "videos/zahnfleisch", to: "pages#zahnfleisch"
-  get "videos/druck", to: "pages#druck"
-  get "videos/koefte", to: "pages#koefte"
+  get "videos/apsilon", to: "pages#apsilon"
+  get "videos/michaelbrandon", to: "pages#michaelbrandon"
 
 
 
